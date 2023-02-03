@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice2</title>
+</head>
+<body>
+    <h1>Practice 2</h1>
+    <p>Nhập chiều dài, chiều rộng hình chữ nhật. in ra chu vi, diện tích</p>
+    <script>
+        // Input
+     let length = parseInt(prompt("Please input the lenght of rectangle: "));
+     let width = parseInt(prompt("Please inpt the width of rectangle: "));
+    //  alert("Type of cd: " + typeof(cd));
+
+    // Processing/ Calculating
+    let perimeter = (length + width) * 2;
+    let area = length * width;
+
+    // Output
+    alert("Perimeter of rextangle is: " + perimeter);
+    // thay vì dùng cặp nháy đôi thì dùng nháy huyền ` thì 
+    // thì khi lấy giá trị biến không cần dùng dấu + nữa, mà trước biến dùng dấu ${}
+    alert(`Area of rectangle is: ${area}`);
+
+    </script>
+</body>
+</html>

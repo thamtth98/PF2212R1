@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+</head>
+<body>
+    <h1>Practice 1 - Square of a number </h1>
+    <p>Nhập vào 1 số nguyên n. Tính bình phương của n</p>
+
+    <script>
+        let n = parseInt(prompt("Please enter n: "));
+        // để kiểm tra kiểu của n
+        // alert("Value of n:" + n);
+        // alert("Type of n: " + typeof(n))
+        // đối với hàn prompt thì đều typeof là kiểu string
+        // dùng hàm parseInt để ép qua kiểu số nguyên (number), int là viết tắt của integer
+        // dùng hàm parseFloat để ép qua kiểu số thực (number)
+        let result = n * n;
+
+        alert("Square of " + n +" is " + result);
+    </script>
+</body>
+</html>
