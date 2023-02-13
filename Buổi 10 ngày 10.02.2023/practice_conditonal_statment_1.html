@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Conditional Statement</title>
+  </head>
+  <body>
+    <!-- Nhập vào số điểm cuối kỳ của một học sinh. 
+    Nếu số điểm >=8.5 thì in ra "Bạn được tuyển thẳng"
+Ngược lại in ra "Bạn chưa đủ điểm" -->
+    <form action="#">
+      Your mark: <input id="your-mark" type="text" />
+      <button id="btn-action" type="button">Submit</button>
+    </form>
+    <script>
+      let btnAction = document.getElementById("btn-action");
+      btnAction.addEventListener("click", () => {
+        let mark = document.getElementById("your-mark").value;
+
+        if (parseFloat(mark) >= 8.5) {
+          console.log("Bạn được tuyển thẳng!");
+        } else {
+          console.log("Bạn chưa đủ điểm!");
+        }
+      });
+    </script>
+  </body>
+</html>
