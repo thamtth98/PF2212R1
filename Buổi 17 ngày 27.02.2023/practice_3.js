@@ -6,6 +6,8 @@ let array2 = [];
 // [1, 4, 9, 16, 25, 36, 49]
 
 for(let i in array1 ) {
-    array3 = array1[i]*array1[i];
-    document.write(array3 + "<br>");   
+    // array3 = array1[i]*array1[i];
+    array2.push(Math.pow(array1[i], 2)); //hàm tính bình phương
+
 }
+console.log(array2);

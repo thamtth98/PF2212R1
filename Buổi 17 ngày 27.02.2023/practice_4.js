@@ -10,10 +10,11 @@ let array2 = [100, 200, 300, 400]
  * 40 100
  */
 let array3 = [];
-let newArray2 = array2.reverse();
+// let newArray2 = array2.reverse();
 // document.write(newArray2);
 
 for(i in array1) {
-    array3 = array1[i] +" "+ newArray2[i] + "<br>";
-    document.write(array3);
+    array2.reverse();   
+    document.write(`${array1[i]} ${array2[i]}<br>`);
 }
+
