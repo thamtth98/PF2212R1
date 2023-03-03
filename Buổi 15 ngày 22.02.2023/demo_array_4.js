@@ -14,3 +14,5 @@ document.write(`Manrg sau khi sort: ${nameList} <br>`);
 //nối các phần tử trong mảng lại thành chuỗi
 console.log(nameList);
 console.log(nameList.join("---")); //type: array # trên là object
+
+
