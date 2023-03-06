@@ -18,7 +18,18 @@ function calculateSum() {
     let n2 = parseInt(prompt("Please input n2: "));
 
     let total = n1 +n2;
-    console.log(total);
+    // console.log(total);
+
+    // sau khi tính toán xong, trả kết quả ra bên ngoài 
+    // thay vì in trực tiếp
+    return total; //trả kqua mà hàm đã xử lý ra bên ngoài
+    // thường với hàm parseInt, promt,... 
+    // thực hiện return là đóng kqua trả ra bên ngoài,
+    // nên những dòng code dưới câu lệnh return sẽ k đc chạy
+    
 }
-calculateSum();
-calculateSum(); //chạy bao nhiều lần thì chạy function bấy nhiu lần
+
+let result = calculateSum();
+console.log(result);
+// calculateSum();
+// calculateSum(); //chạy bao nhiều lần thì chạy function bấy nhiu lần
