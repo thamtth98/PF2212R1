@@ -3,16 +3,22 @@
  * và kiểm tra xem year có phải năm nhuận hay không
  * 
  */
-function isLeapYear(n) {
-    if (n % 4 == 0 & n % 100 != 0){
-        console.log("True");
-    } else if(n % 100 == 0 & n % 400 ==0){
-        console.log("True");
+//mình làm
+// function isLeapYear(year) {
+//     if (year % 4 == 0 & year % 100 != 0){
+//         console.log("True");
+//     } else if(year % 100 == 0 & year % 400 ==0){
+//         console.log("True");
 
-    } else {
-        console.log("False");
-    }
+//     } else {
+//         console.log("False");
+//     }
 
+// }
+
+//thầy chữa:
+function isLeapYear(year) {
+     return (year % 4 == 0 & year % 100 != 0) || year % 400 == 0;
 }
-isLeapYear(2000);
-isLeapYear(2005);
+console.log(isLeapYear(2104));
+console.log(isLeapYear(2005));
